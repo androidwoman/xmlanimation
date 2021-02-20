@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Start"/>
+
+    <Spinner
+        android:id="@+id/spinner_anim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/btn_start"
+        android:layout_marginRight="8dp"/>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/sample_image"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/spinner_anim"
+        android:layout_alignLeft="@id/spinner_anim"/>
+
+
+</RelativeLayout>
